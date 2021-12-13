@@ -41,4 +41,6 @@ permission:
  default: op
  particle.redstone:
  default: op
+ particle.floatingtxt:
+ default: op
 ...
