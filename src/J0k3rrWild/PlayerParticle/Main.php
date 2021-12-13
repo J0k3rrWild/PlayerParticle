@@ -9,6 +9,8 @@ use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\event\player\PlayerMoveEvent;
+use pocketmine\math\Vector3;
+use pocketmine\level\Level;
 
 //Particles
 use pocketmine\level\particle\EnchantParticle;
@@ -30,12 +32,20 @@ use pocketmine\level\particle\SporeParticle;
 use pocketmine\level\particle\SmokeParticle;
 use pocketmine\level\particle\SnowballPoofParticle;
 use pocketmine\level\particle\RedstoneParticle;
+use pocketmine\level\particle\FloatingTextParticle;
+
+
 
 
 
 
 
 class Main extends PluginBase implements Listener{
+
+public $particle;
+public $colors = array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");
+
+
 
     public function onEnable() : void {
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
@@ -49,6 +59,7 @@ class Main extends PluginBase implements Listener{
       
      
     }
+
 
     public function onJoin(PlayerMoveEvent $e){
       $player = $e->getPlayer();
@@ -130,6 +141,22 @@ class Main extends PluginBase implements Listener{
         $player->getLevel()->addParticle(new RedstoneParticle($player)); 
       
     } 
+      
+      if($player->hasPermission("particle.floatingtxt")){
+        
+       
+        $task = new Schelud($this, $player); 
+        $this->getScheduler()->scheduleDelayedTask($task, 1*10); // Counted in ticks (1 second = 20 ticks)
+      
+       
+      
+      
+      
+      
+
+      
+      
+  } 
 
     }
 
