@@ -9,4 +9,24 @@ permission:
  default: op
  particle.flame:
  default: op
+ particle.explode:
+ default: op
+ particle.entityflame:
+ default: op
+ particle.water:
+ default: op
+ particle.waterdrip:
+ default: op
+ particle.lava:
+ default: op
+ particle.lavadrip:
+ default: op
+ particle.heart:
+ default: op
+ particle.angryvillager:
+ default: op
+ particle.happyvillager:
+ default: op
+ particle.critical:
+ default: op
 ...
