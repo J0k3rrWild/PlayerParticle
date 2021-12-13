@@ -29,4 +29,16 @@ permission:
  default: op
  particle.critical:
  default: op
+ particle.enchanttable:
+ default: op
+ particle.ink:
+ default: op
+ particle.spore:
+ default: op
+ particle.smoke:
+ default: op
+ particle.snowball:
+ default: op
+ particle.redstone:
+ default: op
 ...

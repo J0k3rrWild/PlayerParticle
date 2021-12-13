@@ -8,10 +8,11 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
+use pocketmine\event\player\PlayerMoveEvent;
 
 //Particles
-use pocketmine\event\player\PlayerMoveEvent;
 use pocketmine\level\particle\EnchantParticle;
+use pocketmine\level\particle\EnchantmentTableParticle;
 use pocketmine\level\particle\PortalParticle;
 use pocketmine\level\particle\FlameParticle;
 use pocketmine\level\particle\ExplodeParticle;
@@ -24,6 +25,12 @@ use pocketmine\level\particle\HeartParticle;
 use pocketmine\level\particle\AngryVillagerParticle;
 use pocketmine\level\particle\HappyVillagerParticle;
 use pocketmine\level\particle\CriticalParticle;
+use pocketmine\level\particle\InkParticle;
+use pocketmine\level\particle\SporeParticle;
+use pocketmine\level\particle\SmokeParticle;
+use pocketmine\level\particle\SnowballPoofParticle;
+use pocketmine\level\particle\RedstoneParticle;
+
 
 
 
@@ -99,6 +106,30 @@ class Main extends PluginBase implements Listener{
         $player->getLevel()->addParticle(new CriticalParticle($player)); 
       
     }
+      if($player->hasPermission("particle.enchanttable")){
+        $player->getLevel()->addParticle(new EnchantmentTableParticle($player)); 
+      
+    }
+      if($player->hasPermission("particle.ink")){
+        $player->getLevel()->addParticle(new InkParticle($player)); 
+      
+    }
+      if($player->hasPermission("particle.spore")){
+        $player->getLevel()->addParticle(new SporeParticle($player)); 
+      
+    }
+      if($player->hasPermission("particle.smoke")){
+        $player->getLevel()->addParticle(new SmokeParticle($player)); 
+      
+    } 
+      if($player->hasPermission("particle.snowball")){
+        $player->getLevel()->addParticle(new SnowballPoofParticle($player)); 
+      
+    } 
+      if($player->hasPermission("particle.redstone")){
+        $player->getLevel()->addParticle(new RedstoneParticle($player)); 
+      
+    } 
 
     }
 
