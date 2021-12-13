@@ -13,6 +13,7 @@ class ScheludRemove extends Task{
 
     public function __construct(Schelud $plugin, $part, Level $level){ 
        $this->level = $level;
+       $this->part = $part;
     } 
 
 
