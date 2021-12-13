@@ -1,0 +1,12 @@
+---
+name: PlayerParticle
+version: 0.0.1
+main: J0k3rrWild\PlayerParticle\Main
+api: 3.26.2
+website: https://github.com/J0k3rrWild
+permission:
+ particle.portal:
+ default: op
+ particle.flame:
+ default: op
+...
