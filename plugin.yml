@@ -4,7 +4,21 @@ version: 0.0.1
 main: J0k3rrWild\PlayerParticle\Main
 api: 3.26.2
 website: https://github.com/J0k3rrWild
+
+commands:
+  particles:
+   permission: particle.command.particle
+   description: Komenda główna particle
+   usage: /particle disable/enable
+   aliases: ["pa"]
+
 permission:
+ particle.command.particle:
+ default: op
+ description: Komenda główna particle
+ particle.set:
+ default: op
+ description: Ustawia particle dla operatora  
  particle.portal:
  default: op
  particle.flame:
