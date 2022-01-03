@@ -5,21 +5,22 @@ use pocketmine\scheduler\Task;
 use J0k3rrWild\PlayerParticle\task\Schelud;
 use J0k3rrWild\PlayerParticle\Main;
 use pocketmine\level\particle\FloatingTextParticle; 
-use pocketmine\level\Level;
 
 
 class ScheludRemove extends Task{
 
 
-    public function __construct(Schelud $plugin, $part, Level $level){ 
-       $this->level = $level;
+    public function __construct(Schelud $plugin, $part, $vect, $level){ 
+       $this->vect = $vect;
        $this->part = $part;
+       $this->level = $level;
     } 
 
 
-    public function onRun(int $tick){ 
+    public function onRun(): void{ 
+        
         $this->part->setInvisible(true);
-        $this->level->addParticle($this->part);
+        $this->level->addParticle($this->vect, $this->part);
         
     }
 

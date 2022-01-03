@@ -1,60 +1,46 @@
 ---
 name: PlayerParticle
-version: 0.0.1
+version: 1.0.7
 main: J0k3rrWild\PlayerParticle\Main
-api: 3.26.2
+api: 4.0.0
 website: https://github.com/J0k3rrWild
-
-commands:
-  particles:
-   permission: particle.command.particle
-   description: Komenda główna particle
-   usage: /particle disable/enable
-   aliases: ["pa"]
-
-permission:
- particle.command.particle:
- default: op
- description: Komenda główna particle
- particle.set:
- default: op
- description: Ustawia particle dla operatora  
+permissions:
  particle.portal:
- default: op
+  default: op
  particle.flame:
- default: op
+  default: op
  particle.explode:
- default: op
+  default: op
  particle.entityflame:
- default: op
+  default: op
  particle.water:
- default: op
+  default: op
  particle.waterdrip:
- default: op
+  default: op
  particle.lava:
- default: op
+  default: op
  particle.lavadrip:
- default: op
+  default: op
  particle.heart:
- default: op
+  default: op
  particle.angryvillager:
- default: op
+  default: op
  particle.happyvillager:
- default: op
+  default: op
  particle.critical:
- default: op
+  default: op
  particle.enchanttable:
- default: op
+  default: op
  particle.ink:
- default: op
+  default: op
  particle.spore:
- default: op
+  default: op
  particle.smoke:
- default: op
+  default: op
  particle.snowball:
- default: op
+  default: op
  particle.redstone:
- default: op
+  default: op
  particle.floatingtxt:
- default: op
+  default: op
 ...
