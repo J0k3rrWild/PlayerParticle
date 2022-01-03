@@ -63,7 +63,7 @@ Give permission to a player to give him specified particle
  
  ```particle.redstone```
   
- ```particle.floatingtxt``` - New!! It it spawn rainbow floating text particle with your nick
+ ```particle.floatingtxt``` - New!! It is spawn rainbow floating text particle with your nick
  
  ## Social media
 
