@@ -1,6 +1,6 @@
-# PlayerParticle - for PMMP API 4.0.3
+# PlayerParticle - for PMMP API 3.26.2
 
-You need this plugin for API 3.26.2 instead? [CLICK HERE](https://github.com/J0k3rrWild/PlayerParticle/tree/master)
+You need this plugin for API 4.0.3 instead? [CLICK HERE](https://github.com/J0k3rrWild/PlayerParticle/tree/master)
 
 [![](https://poggit.pmmp.io/shield.state/PlayerParticle)](https://poggit.pmmp.io/p/PlayerParticle)
 
